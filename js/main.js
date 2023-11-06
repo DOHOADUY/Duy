@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     // process bar
     setTimeout(function() {
@@ -104,7 +105,7 @@ $('#yes').click(function() {
         html: true,
         width: 900,
         padding: '3em',
-        html: "<input type='text' class='form-control' onmousemove=textGenerate()  placeholder='điền nè'>",
+        html: "<input type='text' class='form-control' onmousemove=textGenerate()  placeholder='Nhắn lại cho tớ nhé, chỗ này chưa fixbug'>",
        // html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='điền nè'>",
         background: '#fff url("img/iput-bg.jpg")',
         backdrop: `
@@ -115,7 +116,8 @@ $('#yes').click(function() {
             `,
         confirmButtonColor: '#3085d6',
         confirmButtonColor: '#fe8a71',
-        confirmButtonText: CONFIG.btnReply
+        // confirmButtonText: CONFIG.btnReply
+    
     }).then((result) => {
         if (result.value) {
             Swal.fire({
@@ -131,5 +133,7 @@ $('#yes').click(function() {
             })
         }
     })
+    
+
 })
 
